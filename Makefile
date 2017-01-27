@@ -3,14 +3,19 @@ SRCS=hello-world.c
 HDRS=hello-world.h
 LIBS=-lpthread
 PROG=tm-hello-world
+MANPAGE=tm-hello-world.1
 BIN=/usr/bin
-DEST=$(DESTDIR)$(BIN)
+MAN=/usr/share/man/man1
+BINDIR=$(DESTDIR)$(BIN)
+MANDIR=$(DESTDIR)$(MAN)
 
 all: $(PROG)
 
 install: $(PROG)
-	install -d $(DEST)
-	install $(PROG) $(DEST)
+	install -d $(BINDIR)
+	install $(PROG) $(BINDIR)
+	install -d $(MANDIR)
+	install $(MANPAGE) $(MANDIR)
 
 clean:
 	rm -f $(PROG)
