@@ -1,0 +1,39 @@
+.TH tm-hello-world 1 "Hello World for The Machine"
+.SH NAME
+tm-hello-world \- Hello World for The Machine
+.SH SYNOPSYS
+.B tm-hello-world <shelf> <my-id> <their-id>
+.SH DESCRIPTION
+.B Tm-hello-world
+is a simple program to demonstrate communication between nodes on The
+Machine through shared memory using POSIX APIs. It operates as a text
+chat program, sending messages read from the console to another user
+and displaying messages sent from that user.
+.SH USAGE
+.PP
+<shelf> is the name of a shelf in fabric attached Memory.
+.PP
+<my-id> is a small integer indicating which buffer to use for sending
+messages.
+.PP
+<their-id> is a small integer indicating which buffer to use for
+receiving messages.
+.SH EXAMPLES
+.TP
+tm-hello-world /lfs/hello-world 0 1
+.TP
+tm-hello-world /lfs/hello-world 1 0
+.SH AUTHOR
+.B Tm-hello-world
+was written by Keith Packard <packard@hpe.com> and
+is Copyright 2017 Keith Packard.
+.PP
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation, either version 3 of
+the License, or (at your option) any later version.
+.PP
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
