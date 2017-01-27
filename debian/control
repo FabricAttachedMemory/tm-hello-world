@@ -1,0 +1,17 @@
+Source: tm-hello-world
+Maintainer: Keith Packard <packard@hpe.com>
+Uploaders: Keith Packard <keithp@keithp.com>
+Section: misc
+Priority: optional
+Origin: HPE
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+
+Package: tm-hello-world
+Section: misc
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Description: Hello world for The Machine
+ Simple application that demonstrates fabric attached memory
+ sharing across nodes
