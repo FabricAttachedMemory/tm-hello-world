@@ -1,7 +1,7 @@
 CFLAGS=-O0 -g
 SRCS=hello-world.c
 HDRS=hello-world.h
-LIBS=-lpthread
+LIBS=-lfam_atomic -lpmem -lpthread
 PROG=tm-hello-world
 MANPAGE=tm-hello-world.1
 BIN=/usr/bin
