@@ -1,6 +1,10 @@
 # tm-hello-world
 
-## Setup
+## Host Setup
+
+Your host machine will need the librarian set up and running, otherwise you will get segfaults.
+
+## VM Setup
 
 Log in to your one of your node virtual machines with username "l4tm" (no quotes) and password "iforgot" (no quotes).
 
