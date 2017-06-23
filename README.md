@@ -12,6 +12,13 @@ Install git:
 
 	$ sudo apt-get install git
 
+If your machine is behind a proxy, create a file called ".gitconfig" (no quotes) in your home directory and add these lines to it:
+
+	[http]
+		proxy = http://im.not.very.creative:port
+	[https]
+		proxy = https://help.im.trapped.in.a.proxy.factory:port
+
 Clone this repository:
 
 	$ git clone https://www.github.com/FabricAttachedMemory/tm-hello-world
